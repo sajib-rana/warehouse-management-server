@@ -70,6 +70,9 @@ async function run(){
 }
 run().catch((err) => console.dir(err));
 
+app.get('/hero',(req, res)=>{
+  res.send('hero meets hero ku')
+})
 const port = process.env.PORT || 5000;
 app.listen(port, ()=>{
     console.log('listening to port', port)
